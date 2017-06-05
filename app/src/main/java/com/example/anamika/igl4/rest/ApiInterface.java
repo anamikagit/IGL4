@@ -1,6 +1,7 @@
 package com.example.anamika.igl4.rest;
 
 import com.example.anamika.igl4.model.LoginFieldResponce;
+import com.example.anamika.igl4.model.MeterReadingResponce;
 
 import java.util.List;
 
@@ -13,4 +14,8 @@ public interface ApiInterface {
     Call<List<LoginFieldResponce>> sendLoginCredential
             (@Query("Uid") String User_ID,
              @Query("pwd") String pwd);
+
+    @GET("amrs_igl_api/webservice.asmx/getdetails")
+    Call<List<MeterReadingResponce>> getMeterReading
+            (@Query("orgid") String OrgID);
 }

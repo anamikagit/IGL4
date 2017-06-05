@@ -40,6 +40,7 @@
         android:layout_height="50dp"
         android:text="@string/spinner_show_button"
         android:background="#ccff00"
+        android:id="@+id/spinner_show"
         android:layout_marginTop="21dp"
         android:layout_below="@+id/meter_reading_spinner"
         android:layout_centerHorizontal="true" />
