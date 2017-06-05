@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">IGL4</string>
-    <string name="spinner_name">View Meter Reading</string>
+    <string name="app_name">IGL</string>
+    <string name="spinner_name">Check Meter Reading</string>
 </resources>

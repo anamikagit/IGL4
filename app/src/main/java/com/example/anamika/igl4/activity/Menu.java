@@ -26,14 +26,11 @@ Spinner spinner;
         setContentView(R.layout.activity_menu);
         //ButterKnife.bind(this);
         spinner = (Spinner) findViewById(R.id.meter_reading_spinner);
-       // textView = (TextView) findViewById(R.id.spinner_textView);
+        textView = (TextView) findViewById(R.id.spinner_text);
 
         List<String> data = new ArrayList<String>();
-        data.add("anu");
-        data.add("afff");
-        data.add("afs");
-        data.add("sdf");
-        data.add("amk");
+        data.add("Daily");
+        data.add("Monthly");
 
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this,R.layout.spinner_item,data);
         spinner.setAdapter(dataAdapter);
