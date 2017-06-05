@@ -8,30 +8,48 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.anamika.igl4.MainActivity"
-    android:background="@drawable/pipe2">
-
-    <include android:id="@+id/toolbar"
-        layout="@layout/toolbar"/>
+    tools:context="com.example.anamika.igl4.activity.MainActivity"
+    android:background="@drawable/igl_wallpaper">
 
     <EditText
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:id="@+id/edt_uname"
-        android:hint="Username"/>
+        android:hint="Enter Username"
+        android:textColor="#ECB028"
+        android:textColorHint="#ECB028"
+        android:layout_marginTop="132dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp" />
+
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:inputType="textPassword"
         android:id="@+id/edt_pwd"
-        android:layout_below="@+id/edt_uname"
-        android:hint="Password"/>
+        android:hint="Enter Password"
+        android:textColor="#ECB028"
+        android:textColorHint="#ECB028"
+        android:layout_alignBaseline="@+id/edt_uname"
+        android:layout_alignBottom="@+id/edt_uname"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="14dp"
+        android:layout_marginEnd="14dp" />
+
     <Button
-        android:id="@+id/btn_timeOut"
-        android:layout_width="match_parent"
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
         android:layout_height="?android:attr/actionBarSize"
         android:layout_gravity="bottom"
-        android:layout_margin="5dp"
         android:text="Login"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="150dp"
+        android:background="#ECB028"/>
 
 </RelativeLayout>

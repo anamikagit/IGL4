@@ -1,9 +1,11 @@
-package com.example.anamika.igl4;
+package com.example.anamika.igl4.activity;
 
 import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.anamika.igl4.R;
 
 public class LauncherActivity extends AppCompatActivity {
 
