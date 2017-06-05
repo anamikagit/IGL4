@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">IGL</string>
     <string name="spinner_name">Check Meter Reading</string>
+    <string name="spinner_show_button">Show</string>
 </resources>
