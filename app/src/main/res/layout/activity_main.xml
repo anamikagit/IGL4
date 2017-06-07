@@ -32,7 +32,7 @@
         android:id="@+id/edt_pwd"
         android:hint="Enter Password"
         android:textColor="#ECB028"
-        android:textColorHint="#ECB028"
+        android:textColorHint="@color/myColor"
         android:layout_alignBaseline="@+id/edt_uname"
         android:layout_alignBottom="@+id/edt_uname"
         android:layout_alignParentRight="true"

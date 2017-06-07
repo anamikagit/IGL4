@@ -39,7 +39,7 @@
         android:layout_width="80dp"
         android:layout_height="50dp"
         android:text="@string/spinner_show_button"
-        android:background="#ccff00"
+        android:background="@color/myColor"
         android:id="@+id/spinner_show"
         android:layout_marginTop="21dp"
         android:layout_below="@+id/meter_reading_spinner"

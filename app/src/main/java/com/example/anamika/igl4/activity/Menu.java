@@ -3,6 +3,8 @@ package com.example.anamika.igl4.activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -11,6 +13,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.example.anamika.igl4.R;
+import com.example.anamika.igl4.adapter.ReadingAdapter;
 import com.example.anamika.igl4.model.LoginFieldResponce;
 import com.example.anamika.igl4.model.MeterReadingResponce;
 import com.example.anamika.igl4.rest.ApiClient;
@@ -54,18 +57,22 @@ public class Menu extends AppCompatActivity implements AdapterView.OnItemSelecte
             public void onClick(View view) {
                 Intent i = new Intent(Menu.this,MeterReading.class);
                 startActivity(i);
-                getMeterReading();
+                //getMeterReading();
             }
         });
     }
 
-    public void getMeterReading(){
+   // RecyclerView recyclerView = (RecyclerView) findViewById(R.id.reading_layout);
+    //recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+    /*public void getMeterReading(){
 
         Call<List<MeterReadingResponce>> call = apiService.getMeterReading("o00002");
         call.enqueue(new Callback<List<MeterReadingResponce>>() {
             @Override
             public void onResponse(Call<List<MeterReadingResponce>> call, Response<List<MeterReadingResponce>> response) {
-
+            List<MeterReadingResponce>readingResponces = response.body();
+               recyclerView.setAdapter(new ReadingAdapter(readingResponces,R.layout.meter_reading_row,getApplicationContext()));
             }
 
             @Override
@@ -73,8 +80,8 @@ public class Menu extends AppCompatActivity implements AdapterView.OnItemSelecte
 
             }
         });
+*/
 
-    }
 
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
