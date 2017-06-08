@@ -62,17 +62,17 @@ public class Menu extends AppCompatActivity implements AdapterView.OnItemSelecte
         });
     }
 
-   // RecyclerView recyclerView = (RecyclerView) findViewById(R.id.reading_layout);
+      RecyclerView recyclerView ;
     //recyclerView.setLayoutManager(new LinearLayoutManager(this));
-
-    /*public void getMeterReading(){
+/*
+    public void getMeterReading() {
 
         Call<List<MeterReadingResponce>> call = apiService.getMeterReading("o00002");
         call.enqueue(new Callback<List<MeterReadingResponce>>() {
             @Override
             public void onResponse(Call<List<MeterReadingResponce>> call, Response<List<MeterReadingResponce>> response) {
-            List<MeterReadingResponce>readingResponces = response.body();
-               recyclerView.setAdapter(new ReadingAdapter(readingResponces,R.layout.meter_reading_row,getApplicationContext()));
+                List<MeterReadingResponce> readingResponces = response.body();
+                recyclerView.setAdapter(new ReadingAdapter(readingResponces, R.layout.meter_reading_row, getApplicationContext()));
             }
 
             @Override
@@ -80,8 +80,8 @@ public class Menu extends AppCompatActivity implements AdapterView.OnItemSelecte
 
             }
         });
-*/
 
+    }*/
 
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {

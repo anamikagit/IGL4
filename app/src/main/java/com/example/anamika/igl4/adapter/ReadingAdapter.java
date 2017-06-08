@@ -20,6 +20,17 @@ public class ReadingAdapter extends RecyclerView.Adapter<ReadingAdapter.ReadingV
     private int rowLayout;
     private Context context;
 
+    public class ReadingViewHolder extends RecyclerView.ViewHolder {
+        TextView tv_reading;
+        TextView tv_date;
+        RelativeLayout relativeLayout;
+        public ReadingViewHolder(View itemView) {
+            super(itemView);
+            relativeLayout = (RelativeLayout) itemView.findViewById(R.id.reading_layout);
+            tv_reading = (TextView) itemView.findViewById(R.id.tv_reading);
+            tv_date = (TextView) itemView.findViewById(R.id.tv_reading_date);
+        }
+    }
     public ReadingAdapter(List<MeterReadingResponce> meterReadingResponceList, int rowLayout, Context context) {
         this.meterReadingResponceList = meterReadingResponceList;
         this.rowLayout = rowLayout;
@@ -41,17 +52,5 @@ public class ReadingAdapter extends RecyclerView.Adapter<ReadingAdapter.ReadingV
     @Override
     public int getItemCount() {
         return 0;
-    }
-
-    public class ReadingViewHolder extends RecyclerView.ViewHolder {
-        TextView tv_reading;
-        TextView tv_date;
-        RelativeLayout relativeLayout;
-        public ReadingViewHolder(View itemView) {
-            super(itemView);
-            relativeLayout = (RelativeLayout) itemView.findViewById(R.id.reading_layout);
-            tv_reading = (TextView) itemView.findViewById(R.id.tv_reading);
-            tv_date = (TextView) itemView.findViewById(R.id.tv_reading_date);
-        }
     }
 }
