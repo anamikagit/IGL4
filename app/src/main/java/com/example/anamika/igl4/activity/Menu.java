@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -40,6 +41,8 @@ public class Menu extends AppCompatActivity implements AdapterView.OnItemSelecte
         setContentView(R.layout.activity_menu);
         //ButterKnife.bind(this);
 
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
         spinner = (Spinner) findViewById(R.id.meter_reading_spinner);
         textView = (TextView) findViewById(R.id.spinner_text);
         button = (Button) findViewById(R.id.spinner_show);

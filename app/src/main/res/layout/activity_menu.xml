@@ -9,8 +9,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.anamika.igl4.activity.Menu"
-    android:background="@drawable/igl_wallpaper">
-
+    android:background="@drawable/igl_wallpaper2">
+    <include android:id="@+id/myToolbar" layout="@layout/toolbar"/>
     <Spinner
         android:layout_width="100dp"
         android:layout_height="50dp"
