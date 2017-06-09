@@ -23,7 +23,6 @@ import static android.R.id.list;
 
 public class MeterReading extends AppCompatActivity {
     RecyclerView recyclerView;
-    ReadingAdapter readingAdapter;
 
     ApiInterface apiService = ApiClient.getClient().create(ApiInterface.class);
     @Override
@@ -36,6 +35,7 @@ public class MeterReading extends AppCompatActivity {
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
+        final ReadingAdapter readingAdapter = new ReadingAdapter();
         recyclerView.setAdapter(readingAdapter);
 
         Call<List<MeterReadingResponce>> call = apiService.getMeterReading("o00002");
@@ -43,7 +43,8 @@ public class MeterReading extends AppCompatActivity {
             @Override
             public void onResponse(Call<List<MeterReadingResponce>> call, Response<List<MeterReadingResponce>> response) {
                 List<MeterReadingResponce> readingResponces = response.body();
-                recyclerView.setAdapter(new ReadingAdapter(readingResponces, R.layout.meter_reading_row, getApplicationContext()));
+//                recyclerView.setAdapter(new ReadingAdapter(readingResponces, R.layout.meter_reading_row, getApplicationContext()));
+                readingAdapter.updateList(readingResponces);
             }
 
             @Override
