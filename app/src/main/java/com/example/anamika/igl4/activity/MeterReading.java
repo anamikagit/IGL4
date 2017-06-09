@@ -42,9 +42,8 @@ public class MeterReading extends AppCompatActivity {
         call.enqueue(new Callback<List<MeterReadingResponce>>() {
             @Override
             public void onResponse(Call<List<MeterReadingResponce>> call, Response<List<MeterReadingResponce>> response) {
-                List<MeterReadingResponce> readingResponces = response.body();
-//                recyclerView.setAdapter(new ReadingAdapter(readingResponces, R.layout.meter_reading_row, getApplicationContext()));
-                readingAdapter.updateList(readingResponces);
+                  List<MeterReadingResponce> readingResponces = response.body();
+                  readingAdapter.updateList(readingResponces);
             }
 
             @Override
@@ -52,6 +51,5 @@ public class MeterReading extends AppCompatActivity {
 
             }
         });
-
     }
 }

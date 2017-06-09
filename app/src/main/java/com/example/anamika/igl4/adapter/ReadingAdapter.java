@@ -29,6 +29,7 @@ public class ReadingAdapter extends RecyclerView.Adapter<ReadingAdapter.ReadingV
     public void updateList(List<MeterReadingResponce> meterReadingResponces){
         this.meterReadingResponceList = meterReadingResponces;
         notifyDataSetChanged();
+
     }
 
     @Override
@@ -39,8 +40,8 @@ public class ReadingAdapter extends RecyclerView.Adapter<ReadingAdapter.ReadingV
 
     @Override
     public void onBindViewHolder(ReadingViewHolder holder, int position) {
-        holder.tv_date.setText(meterReadingResponceList.get(position).getReading());
-        holder.tv_reading.setText(meterReadingResponceList.get(position).getIMGDATE());
+        holder.tv_date.setText(meterReadingResponceList.get(position).getIMGDATE());
+        holder.tv_reading.setText(meterReadingResponceList.get(position).getReading());
     }
 
     @Override
