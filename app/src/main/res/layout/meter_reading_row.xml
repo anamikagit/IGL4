@@ -4,30 +4,29 @@
     android:layout_height="match_parent"
     android:id="@+id/reading_layout">
     <include android:id="@+id/myToolbar" layout="@layout/toolbar"/>
+
     <TextView
         android:id="@+id/tv_reading"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:hint="hii"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="14dp"
-        android:layout_marginStart="14dp"
-        android:layout_marginTop="13dp" />
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:id="@+id/tv_reading_date"
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:layout_marginRight="23dp"
         android:hint="bii"
-        android:layout_marginEnd="23dp"
         android:layout_alignBaseline="@+id/tv_reading"
         android:layout_alignBottom="@+id/tv_reading"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_toRightOf="@+id/tv_reading"
-        android:layout_toEndOf="@+id/tv_reading" />
+        android:layout_marginRight="34dp"
+        android:layout_marginEnd="34dp" />
 
 </RelativeLayout>
