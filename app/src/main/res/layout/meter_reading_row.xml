@@ -3,11 +3,11 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/reading_layout">
-    <include android:id="@+id/myToolbar" layout="@layout/toolbar"/>
+
 
     <TextView
         android:id="@+id/tv_reading"
-        android:layout_width="100dp"
+        android:layout_width="150dp"
         android:layout_height="50dp"
         android:hint="hii"
         android:layout_marginLeft="16dp"
@@ -15,8 +15,7 @@
         android:layout_marginTop="80dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
+ />
     <TextView
         android:id="@+id/tv_reading_date"
         android:layout_width="150dp"

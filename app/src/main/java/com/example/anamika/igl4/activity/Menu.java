@@ -30,7 +30,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class Menu extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
-//@BindView(R.id.meter_reading_spinner)Spinner spinner;
+
     Spinner spinner;
     TextView textView;
     Button button;
